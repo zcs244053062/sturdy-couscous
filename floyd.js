@@ -280,9 +280,9 @@ var Obtn1 = document.getElementById("walk");
 var Obtn2 = document.getElementById("ride");
 var begin = document.getElementById("begin");
 var end = document.getElementById("end");
-var oLine ;
-var oWeigh ;
-var oTime ;
+var oLine = window.document.getElementById("line");
+var oWeigh = window.document.getElementById("weigh");
+var oTime = window.document.getElementById("time");
 
 
 Obtn1.onclick = function(){
