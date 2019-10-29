@@ -1,0 +1,95 @@
+div,
+body,
+html {
+	padding: 0;  /*容器内距边界的距离*/
+	margin: 0;  /*容器外的距离*/
+	z-index: -10;
+}
+
+.biaoti{
+	margin-top: 40px;
+}
+/*设置API地图样式容器*/
+.container {
+	float: left;
+	width: 950px;
+	height: 800px;
+	margin: 10px 0 20px 40px;
+	border: double;/*此处可设置地图容器边界宽度等样式*/
+	border-color: gray;
+}
+
+.show{
+	width: 350px;
+	height: 300px;
+	float: right;
+	margin: 100px 150px 0 0;
+	border: solid 1px #d3dbdf;
+	position: relative;
+	background: rgba(255,255,255,0.5);
+	box-shadow: 0 0 3px 5px rgba(0,0,0,.5);
+}
+
+.show1{
+	width: 350px;
+	height: 250px;
+	float: right;
+	font-size: 20px;
+	margin: 10px 150px 0 0;
+	border: solid 1px #d3dbdf;
+	position: relative;
+	background: rgba(255,255,255,0.5);
+	box-shadow: 0 0 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
+.dengl{
+	margin: 10px 10px 7px 20px;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	color: #0080b0;
+
+}
+.title {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: black;
+	padding: 10px 0 10px 0px;/*距内部边界*/
+	margin: 5px 50px 0 50px;/*距外部边界*/
+}
+
+.buxing {
+	margin: 20px 10px 0 20px;
+	font-size: 20px;
+}
+
+.biaoti3{
+	margin: 0 100px 0 0;
+	text-decoration: none;
+}
+
+.require{
+	width: 500px;
+	height: 500px;
+	border: double 2px;
+	font-size: 22px;
+	background-color: whitesmoke;
+	margin: 150px 0 0 570px;
+}
+
+.title2{
+	font: georgia;
+	font-size: 45px;
+	font-family: "微软雅黑";
+	margin: 100px 500px 0 500px;
+	box-shadow: 0 0 3px 5px rgba(0,0,0,.5);
+	background-color: whitesmoke;
+}
+
+.time{
+	float: right;
+	margin: 50px 100px 80px 0;
+	font-size: 20px;
+	color: #000000;
+}

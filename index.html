@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <title>校园最短路径</title>
+ 	<link href="/zuiduanlujing/css/layout.css"	rel="stylesheet" type="text/css" />
+</head>
+<body style="background:url(img/back12.jpg);" >
+<figure align="center" class="biaoti"><font size="6"><b>校园最短路径漫游</b></font></br>
+	<p align="right">
+		<font size="4.5">
+			组长：张传胜   &nbsp; &nbsp; 小组成员：邹  鑫、陈  楠、杨翼豪、李思谚   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</br>
+		</font>
+	</p>
+	<p align="right">
+		<style type="text/css">a{text-decoration: none;}</style>
+		<a href="requirement.html"><font size="4.5">项目要求</font></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://202.121.199.224/teacher/" target="_blank"><font size="4.5">课程项目中心</font></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</p>
+</figure>
+
+	
+<div id="container" class="container">
+	<div>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=87487d28f145b639ae94c3a6c6f28051&plugin=AMap.Driving"></script><!-- 加载地图JSAPI脚本 -->
+		<script src="/zuiduanlujing/js/newmap.js">//不在这里写JS的代码</script>
+		
+	</div>
+</div>
+
+<div class="show">
+		<div  class="dengl">
+			选择地点
+		</div>
+		<div>
+			<div class="title">
+					起&nbsp;&nbsp;&nbsp;点:<input id="begin" type="text" value="" placeholder="请输入起点"/>
+			</div>
+			<!--
+            	作者：244053062@qq.com
+            	时间：2019-10-25
+            	描述：
+            <td>
+					<input type="button" onclick="change()" value="↑↓" />
+			</td>
+            -->
+			<div class="title">		
+					终&nbsp;&nbsp;&nbsp;点:<input id="end" type="text" value="" placeholder="请输入终点"/>
+			</div>
+		</div>
+        <div>
+        	<div>
+        		<input class="buxing" id="walk" type="button" value="步行" />
+				<input class="buxing" id="ride" type="button" value="骑行" />
+				<input class="buxing" type="button" onclick="roadmessage()" value="路况信息" />
+        	</div>
+        </div>
+</div>
+<div id="div1" class="show1">
+	<p>您的最短路线为：</p>
+	<h4 id="line"></h4>
+	<p></p>
+	<p>路线总长度：</p>
+	<h4 id="weigh"></h4>
+	<p></p>
+	<p>所需时间为：</p>
+	<h4 id="time"></h4>
+</div>
+	<script src="/zuiduanlujing/js/floyd.js"></script>
+	<script src="/zuiduanlujing/js/addline.js"></script>
+	<p id="time1" class="time"></p>
+	<script src="js/time.js" ></script>
+</body>
+
+</html>
