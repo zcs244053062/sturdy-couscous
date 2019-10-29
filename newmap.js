@@ -1,7 +1,9 @@
 var map = new AMap.Map('container', {
         resizeEnable: true, //是否监控地图容器尺寸变化
         zoom:16, //初始化地图层级
-        center: [121.393421,31.315984] //初始化地图中心点   
+        center: [121.393421,31.315984], //初始化地图中心点 
+	pitch:75, // 地图俯仰角度，有效范围 0 度- 83 度
+    	viewMode:'3D' // 地图模式
     });
     
 /* map.plugin('AMap.Geolocation', function() {})  
